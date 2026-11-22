@@ -1,0 +1,31 @@
+<circuit version="2.0.0-" rev="260501" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="1" anicurr="1" ansi="1" width="3200" height="2400" >
+
+<item itemtype="Resistor" CircId="Resistor-48" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-28,-220" rotation="0" hflip="1" vflip="1" label="Resistor-48" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-49" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-40,-176" rotation="0" hflip="1" vflip="1" label="Resistor-49" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Led" CircId="Led-50" mainComp="false" Show_id="false" Show_Val="false" Pos="20,-220" rotation="0" hflip="1" vflip="1" label="Led-50" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Led" CircId="Led-51" mainComp="false" Show_id="false" Show_Val="false" Pos="16,-184" rotation="0" hflip="1" vflip="1" label="Led-51" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Subcircuit" CircId="Uno-56" mainComp="false" Show_id="true" Show_Val="false" Pos="-272,-304" rotation="0" hflip="1" vflip="1" label="Uno-56" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Package="1- Board">
+<mainCompProps MainCompId="mega328-109" Package="1- mega328_DIP" Frequency="16 MHz" ForceFreq="true" savePGM="false" Program="serial/build/serial.ino.hex" Auto_Load="false" saveEepr="true" MainMcu="true" SerialMon="0" />
+</item>
+
+<item itemtype="Node" CircId="Node-57" mainComp="false" Pos="36,-184" />
+
+<item itemtype="Connector" uid="Connector-66" startpinid="Resistor-49-rPin" endpinid="Led-51-lPin" pointList="-24,-176,0,-176,0,-184" />
+
+<item itemtype="Connector" uid="Connector-67" startpinid="Resistor-48-rPin" endpinid="Led-50-lPin" pointList="-12,-220,4,-220" />
+
+<item itemtype="Connector" uid="Connector-85" startpinid="Uno-56-13" endpinid="Resistor-48-lPin" pointList="-264,-176,-276,-176,-276,-308,-68,-308,-68,-220,-44,-220" />
+
+<item itemtype="Connector" uid="Connector-86" startpinid="Uno-56-9" endpinid="Resistor-49-lPin" pointList="-264,-208,-280,-208,-280,-312,-64,-312,-64,-176,-56,-176" />
+
+<item itemtype="Connector" uid="Connector-87" startpinid="Node-57-1" endpinid="Uno-56-GND1" pointList="36,-184,36,-156,-100,-156,-100,-216,-120,-216" />
+
+<item itemtype="Connector" uid="Connector-88" startpinid="Led-50-rPin" endpinid="Node-57-0" pointList="36,-220,36,-184" />
+
+<item itemtype="Connector" uid="Connector-89" startpinid="Node-57-2" endpinid="Led-51-rPin" pointList="36,-184,32,-184" />
+
+</circuit>
